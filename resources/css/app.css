@@ -1,0 +1,142 @@
+@import 'tailwindcss';
+
+@source '../../vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php';
+@source '../../storage/framework/views/*.php';
+@source '../**/*.blade.php';
+@source '../**/*.js';
+
+@theme {
+    --font-sans: 'Instrument Sans', ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
+        'Segoe UI Symbol', 'Noto Color Emoji';
+}
+
+.dashboard-header {
+    background: linear-gradient(135deg, #0d6efd, #0dcaf0);
+}
+
+.table-container {
+    background: #ffffff;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+.no-data {
+    text-align: center;
+    padding: 20px;
+    color: #6c757d;
+}
+
+.card {
+    border-radius: 10px;
+}
+
+.card-header {
+    font-weight: 500;
+}
+
+h2 {
+    font-weight: 600;
+}
+
+.info-card .card-header {
+    background: linear-gradient(135deg, #0d6efd, #0dcaf0);
+}
+
+.form-card .card-header {
+    background: linear-gradient(135deg, #212529, #495057);
+}
+
+.card {
+    border-radius: 12px;
+}
+
+.card-body p {
+    margin-bottom: 8px;
+}
+
+.btn-success {
+    font-weight: 500;
+    border-radius: 8px;
+}
+
+.form-control,
+.form-select {
+    border-radius: 8px;
+}
+
+.alert {
+    border-radius: 10px;
+    font-weight: 500;
+}
+
+/* Custom additions for the user dashboard */
+.form-label {
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: #495057;
+}
+
+.table thead th {
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    border-top: none;
+}
+
+.btn-success {
+    padding: 10px;
+    transition: transform 0.2s;
+}
+
+.btn-success:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+/* Center the login box specifically */
+.vh-100 {
+    min-height: 100vh;
+}
+
+/* Enhancing input focus to match your blue theme */
+.form-control:focus {
+    border-color: #0dcaf0;
+    box-shadow: 0 0 0 0.25rem rgba(13, 202, 240, 0.25);
+}
+
+/* Custom button color if not using default Bootstrap primary */
+.btn-primary {
+    background: linear-gradient(135deg, #0d6efd, #0dcaf0);
+    border: none;
+    font-weight: 600;
+}
+
+.btn-link {
+    color: #0d6efd;
+    transition: color 0.2s;
+}
+
+.btn-link:hover {
+    color: #0dcaf0;
+}
+
+/* Registration specific button styling */
+.btn-success {
+    background-color: #198754;
+    border: none;
+    transition: all 0.3s ease;
+}
+
+.btn-success:hover {
+    background-color: #157347;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(25, 135, 84, 0.3);
+}
+
+/* Ensure consistent spacing for error lists */
+.alert ul {
+    margin-bottom: 1rem;
+}
+
+.alert li {
+    font-size: 0.9rem;
+}
